@@ -20,12 +20,13 @@
     />
 
     <title>Frontend Mentor | 3-column preview card component</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
         text-align: center;
+        color: black;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -33,12 +34,37 @@
     </style>
   </head>
   <body>
-    Sedans Choose a sedan for its affordability and excellent fuel economy.
-    Ideal for cruising in the city or on your next road trip. SUVs Take an SUV
-    for its spacious interior, power, and versatility. Perfect for your next
-    family vacation and off-road adventures. Luxury Cruise in the best car
-    brands without the bloated prices. Enjoy the enhanced comfort of a luxury
-    rental and arrive in style.
+    <div class="responsive-container">
+      <div class="preview">
+        <img src="images/icon-sedans.svg" alt="sedan" />
+        <div class="heading">Sedans</div>
+        <div class="body">
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </div>
+        <div class="btn">Learn More</div>
+      </div>
+
+      <div class="preview">
+        <img src="images/icon-suvs.svg" alt="suv" />
+        <div class="heading">SUVS</div>
+        <div class="body">
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </div>
+        <div class="btn">Learn More</div>
+      </div>
+
+      <div class="preview">
+        <img src="images/icon-luxury.svg" alt="Luxury" />
+        <div class="heading">Luxury</div>
+        <div class="body">
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </div>
+        <div class="btn">Learn More</div>
+      </div>
+    </div>
 
     <div class="attribution">
       Challenge by
