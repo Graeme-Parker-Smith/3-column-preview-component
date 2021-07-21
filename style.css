@@ -52,8 +52,8 @@ body {
 }
 
 .preview {
-    width: 20.5rem;
-    padding: 3rem;
+  width: 20.5rem;
+  padding: 3rem;
 }
 
 .preview:nth-child(1) {
@@ -67,38 +67,44 @@ body {
 }
 
 .heading {
-    font-family: var(--font-family-cursive);
-    font-size: var(--font-lg);
-    margin: 2.25rem auto;
-    text-transform: uppercase;
+  font-family: var(--font-family-cursive);
+  font-size: var(--font-lg);
+  margin: 2.25rem auto;
+  text-transform: uppercase;
 }
 
 .body {
-    margin: 1.75rem auto;
-    line-height: 1.5;
-    color: var(--transparent-white);
+  margin: 1.75rem auto;
+  line-height: 1.5;
+  color: var(--transparent-white);
 }
 
 .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    color: black;
-    position: relative;
-    background: none;
-    mix-blend-mode: screen;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: black;
+  position: relative;
+  background: none;
+  mix-blend-mode: screen;
+  cursor: pointer;
 }
+/* pseudo-element with mix-blend-mode allows transparent text that matches
+background color of parent container */
 .btn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: white;
-    border-radius: 25px;
-    mix-blend-mode: color-burn;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white;
+  border-radius: 25px;
+  mix-blend-mode: color-burn;
+}
+.btn:hover {
+  opacity: 0.75;
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 1024px) {
-    .responsive-container {
-        display: flex;
-    }
+  .responsive-container {
+    display: flex;
+  }
 }
